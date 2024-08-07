@@ -10,7 +10,7 @@ setInterval(() => {
     const mm = date.getMinutes() * degree;
     const ss = date.getSeconds() * degree;
 
-    hr.style.transform = `rotateZ(${mm + (hh / 12)}deg)`;
+    hr.style.transform = `rotateZ(${hh + (mm / 12)}deg)`;
     min.style.transform = `rotateZ(${mm}deg)`;
     sec.style.transform = `rotateZ(${ss}deg)`;
 
